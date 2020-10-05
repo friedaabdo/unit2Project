@@ -54,8 +54,10 @@ https://deckofcardsapi.com/
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
+- [Mobile wireframe](https://res.cloudinary.com/dtsnkndle/image/upload/c_scale,w_641/v1601650684/Unit%202%20Project%20-%20BlackJack/BlackJackWF_ajz1px.jpg)
+- [Desktop wireframe](https://res.cloudinary.com/dtsnkndle/image/upload/c_scale,h_600/a_270/v1601650681/Unit%202%20Project%20-%20BlackJack/BlackJackWF2_mwmhet.jpg)
+- [Landing page](https://res.cloudinary.com/dtsnkndle/image/upload/c_scale,h_634/a_270/v1601915842/Unit%202%20Project%20-%20BlackJack/Proj2LP_ekr2lt.jpg)
+- [add link to your react architecture](https://res.cloudinary.com/dtsnkndle/image/upload/c_scale,w_627/v1601915837/Unit%202%20Project%20-%20BlackJack/Proj2Arch_nyecqj.jpg)
 
 
 ### MVP/PostMVP -
@@ -84,7 +86,9 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 | Component | Description | 
 | --- | :---: |  
-| App | This will make the initial data pull and include React Router| 
+| App | This will hold the landing page to both the blackjack game and maybe poker| 
+| BlackJack LP | Landing Page to BlackJack game and will have links to rules and game|
+| Rules | This will take user to game rules| 
 | Table | This will hold all the components and connect the buttons to the game play. It will also pull the data from API | 
 | Buttons | This will give the user interactivity with game | 
 | Dealer | This will give the user something to play against | 
