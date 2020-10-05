@@ -2,6 +2,8 @@
 
 # Project Overview
 
+<iframe src="https://giphy.com/embed/3ov9jUCYetT3GVwcy4" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/player-poker-bet-3ov9jUCYetT3GVwcy4">via GIPHY</a></p>
+
 ## Project Links
 
 - [add your github repo link]()
@@ -71,6 +73,8 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Add multiplayer functionality
 - Add betting
 - Add Landing page
+- Add a poker game
+
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -91,14 +95,26 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Card heirarchy func | H | 3hrs| 3.5hrs | hrs |
-| Dealer rules func | H | 3hrs| 2.5hrs | hrs |
-| Player rules func | H | 3hrs| 5hrs | hrs |
-| Set up components | H | 1hrs| 5hrs | hrs |
-| Understand API and render | H | 3hrs| 5hrs | hrs |
-| Apply rules to API | H | 3hrs| 5hrs | hrs |
+| Card heirarchy func | H | 3hrs| hrs |
+| Dealer rules func | H | 3hrs| hrs |
+| Player rules func | H | 3hrs| hrs |
+| Set up components | H | 1hrs| hrs |
+| Understand API and render | H | 3hrs| 2 hrs |
+| Apply rules to API | H | 3hrs| hrs |
+| Make the buttons work | H | 3hrs| hrs |
+| Set up Router and landing page | M | 1hrs| hrs |
+| Card flipping animations | L | 3hrs| hrs |
+| Link rules to landing page | L | 1hrs| hrs |
+| Adding multiplayer | L | 3hrs| hrs |
+| Get multiplayer to work | L | 3hrs| hrs |
+| STYLING(mobile) | M | 3hrs| hrs |
+| STYLING(desktop) | M | 1hrs| hrs |
+| Score counter | L | 2hrs| hrs |
+
+
+
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
