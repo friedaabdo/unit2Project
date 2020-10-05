@@ -101,12 +101,12 @@ Based on the initial logic defined in the previous sections try and breakdown th
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
+| --- | :---: |  :---: | :---: |
 | Card heirarchy func | H | 3hrs| hrs |
-| Dealer rules func | H | 3hrs| hrs |
-| Player rules func | H | 3hrs| hrs |
+| Dealer rules func | H | 4-5hrs| hrs |
+| Player rules func | H | 4-5hrs| hrs |
 | Set up components | H | 1hrs| hrs |
-| Understand API and render | H | 3hrs| 2 hrs |
+| Understand API and render/collect proper data | H | 5 hrs| hrs |
 | Apply rules to API | H | 3hrs| hrs |
 | Make the buttons work | H | 3hrs| hrs |
 | Set up Router and landing page | M | 1hrs| hrs |
@@ -117,6 +117,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | STYLING(mobile) | M | 3hrs| hrs |
 | STYLING(desktop) | M | 1hrs| hrs |
 | Score counter | L | 2hrs| hrs |
+
+**There will most probably be a loooot of debugging and/or figuring out how things intertwine with each other. There are a lot of shifting parts
 
 
 
