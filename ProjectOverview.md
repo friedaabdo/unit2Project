@@ -7,8 +7,8 @@
 
 ## Project Links
 
-- [add your github repo link]()
-- [add your deployment link]()
+- [Github repo link](https://github.com/friedaabdo/unit2Project)
+- [Deployment link](https://hopeful-boyd-2b880d.netlify.app)
 
 ## Project Description
 
