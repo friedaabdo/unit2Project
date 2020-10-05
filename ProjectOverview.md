@@ -102,12 +102,13 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Card heirarchy func | H | 3hrs| hrs |
-| Dealer rules func | H | 4-5hrs| hrs |
-| Player rules func | H | 4-5hrs| hrs |
+| Card heirarchy func | H | 2hrs| hrs |
+| Ace card rules | M | 2hrs| hrs |
+| Dealer rules func | H | 3hrs| hrs |
+| Hit func | H | 2hrs| hrs |
+| Stand func | H | 2hrs| hrs |
 | Set up components | H | 1hrs| hrs |
-| Understand API and render/collect proper data | H | 5 hrs| hrs |
-| Apply rules to API | H | 3hrs| hrs |
+| Understand API and render/collect proper data | H | 3 hrs| hrs |
 | Make the buttons work | H | 3hrs| hrs |
 | Set up Router and landing page | M | 1hrs| hrs |
 | Card flipping animations | L | 3hrs| hrs |
