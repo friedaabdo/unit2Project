@@ -105,6 +105,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Card heirarchy func | H | 2hrs| hrs |
 | Ace card rules | M | 2hrs| hrs |
 | Dealer rules func | H | 3hrs| hrs |
+| Deal func | H | 2hrs| hrs |
 | Hit func | H | 2hrs| hrs |
 | Stand func | H | 2hrs| hrs |
 | Set up components | H | 1hrs| hrs |
@@ -118,6 +119,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | STYLING(mobile) | M | 3hrs| hrs |
 | STYLING(desktop) | M | 1hrs| hrs |
 | Score counter | L | 2hrs| hrs |
+| **Total** |  | 37hrs| hrs |
 
 **There will most probably be a loooot of debugging and/or figuring out how things intertwine with each other. There are a lot of shifting parts
 
