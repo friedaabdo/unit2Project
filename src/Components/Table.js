@@ -188,7 +188,7 @@ const Table = () => {
         
     }
   };
-  //lets change somoething ldkfsdjsdlkj
+ 
 
   if (userValues() === 21) {
     console.log("yay! BlackJack!");
