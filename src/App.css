@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sansita+Swashed:wght@400;500;600;700&display=swap');
+
+
+.App {
+  text-align: center;
+  background-image: url('https://res.cloudinary.com/dtsnkndle/image/upload/v1601915791/Unit%202%20Project%20-%20BlackJack/pX7y3m_zsnmzq.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  min-height: 100vh;
+  color: white;
+  font-family: "Roboto"
+}
+
+h1 {
+  font-family: 'Sansita Swashed';
+  margin: auto;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  margin: 10px;
+}

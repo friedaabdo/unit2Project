@@ -1,0 +1,8 @@
+.cardImg {
+  display: contents;
+}
+
+img {
+  height: 30vh;
+  margin: 5px 10px;
+}
