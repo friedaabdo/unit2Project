@@ -2,7 +2,7 @@
 
 # Project Overview
 
-![Alt Text]('https://media.giphy.com/media/3ov9jUCYetT3GVwcy4/giphy.gif')
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c2fb5ee-b6d0-4ba1-bfd5-fdc579f9024c/deploy-status)](https://app.netlify.com/sites/hopeful-boyd-2b880d/deploys)
 
 
 ## Project Links
