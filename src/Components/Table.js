@@ -62,9 +62,6 @@ const Table = () => {
     );
   });
 
-  const userValuesArr = userCards.map((card) => {
-    return card.value;
-  });
 
   const [dealerCards, setDealerCards] = useState([]);
 
@@ -103,13 +100,13 @@ const Table = () => {
   const dealerValues = () => {
     const dealerValuesArr = dealerCards.map((card) => {
       if (
-        card.value == "JACK" ||
-        card.value == "QUEEN" ||
-        card.value == "KING"
+        card.value === "JACK" ||
+        card.value === "QUEEN" ||
+        card.value === "KING"
       ) {
         card.value = 10;
       }
-      if (card.value == "ACE") {
+      if (card.value === "ACE") {
         card.value = 11;
       }
 
@@ -134,13 +131,13 @@ const Table = () => {
   const userValues = () => {
     const userValuesArr = userCards.map((card) => {
       if (
-        card.value == "JACK" ||
-        card.value == "QUEEN" ||
-        card.value == "KING"
+        card.value === "JACK" ||
+        card.value === "QUEEN" ||
+        card.value === "KING"
       ) {
         card.value = 10;
       }
-      if (card.value == "ACE") {
+      if (card.value === "ACE") {
         card.value = 11;
       }
 
@@ -179,16 +176,9 @@ const Table = () => {
       
      console.log('no mas dealer!')
     } else {
-        let i = 0
-        while(dealerValues() < 17) {
-            draw1CardDealer(); 
-            i++
-        }
-        
-        
+            draw1CardDealer();  
     }
   };
- 
 
   if (userValues() === 21) {
     console.log("yay! BlackJack!");
@@ -202,6 +192,7 @@ const Table = () => {
   } else if ( dealerValues > 21) {
       console.log('WOO! dealer busted!')
   }
+
 
 
   return (
