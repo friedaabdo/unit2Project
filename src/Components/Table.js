@@ -174,28 +174,35 @@ const Table = () => {
   const handleHit = () => {
     draw1CardUser();
   };
- 
-
-  if (userValues() === 21) {
-    console.log("yay! BlackJack!");
-  } else if (userValues() > 21) {
-      console.log('Dang you busted!')
-  }
-  if (dealerValues() === 21) {
-    console.log("aw darn, you lose");
-  } else if ( dealerValues > 21) {
-      console.log('WOO! dealer busted!')
-  }
-  
-  const handleStand = () => {
+   const handleStand = () => {
     if (dealerValues() > 16) {
       
      console.log('no mas dealer!')
     } else {
-        draw1CardDealer(); 
-        handleStand()
+        let i = 0
+        while(dealerValues() < 17) {
+            draw1CardDealer(); 
+            i++
+        }
+        
+        
     }
   };
+  //lets change somoething ldkfsdjsdlkj
+
+  if (userValues() === 21) {
+    console.log("yay! BlackJack!");
+    handleStand()
+  } else if (userValues() > 21) {
+      console.log('Dang you busted!')
+      handleStand()
+  }
+  if (dealerValues() === 21) {
+    console.log("aw darn, dealer got blackjack");
+  } else if ( dealerValues > 21) {
+      console.log('WOO! dealer busted!')
+  }
+
 
   return (
     <div className="table">
