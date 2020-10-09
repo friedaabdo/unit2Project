@@ -6,17 +6,22 @@
     top: 35vh;
 
     }
-    
+.landing p {
+  font-family: 'Sansita Swashed';
+  text-shadow: 2px 2px 5px black;
+}  
 
 h1 {
   font-family: 'Sansita Swashed';
   margin: auto;
   font-size: 50px;
+  text-shadow: 2px 2px 5px black;
 
 }
 .fas {
   font-size: 3rem;
   color: white;
+  text-shadow: 2px 2px 5px black;
 }
 
 button {
@@ -24,7 +29,9 @@ button {
   color: white;
   border: 3px solid white;
   padding: 5px 10px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   margin: 10px;
   font-size: 20px;
+  /* text-shadow: 2px 2px 5px black; */
+  /* box-shadow: 2px 2px 5px black; */
 }
