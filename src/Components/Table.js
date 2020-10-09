@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Buttons from "./Buttons";
 import User from "./User";
 import Dealer from "./Dealer";
+import './Table.css'
 
 const Table = () => {
   const [deck, setDeck] = useState([]);
@@ -193,20 +194,33 @@ const Table = () => {
   } else if ( dealerValues > 21) {
       console.log('WOO! dealer busted!')
   }
+  //tie = push
+  //user hand > dealer hand and vs
+
+  // const [phrase, setPhrase] = useState('')
+  
+  // switch(true) {
+  //   case (userValues() === 21 && dealerValues() === 21): setPhrase('BlackJack push!');
+  //   case (userValues() === 21): setPhrase('You got BlackJack!');
+  //   case (dealerValues() === 21): setPhrase("Aw darn, dealer got blackjack");
+    // case (userValues() > 21): setPhrase('Dang you busted!');
+    // case (dealerValues() > 21): setPhrase('WOO! dealer busted!');
+  //   case (dealerValues() === userValues()): setPhrase('You push with the dealer')
+  // }
 
 
 
   return (
     <div className="table">
       <Link to="/">
-        <button>Home</button>
+        <i className="fas fa-home"></i>
       </Link>
       <div className="dealerHand">
         <p>Dealer</p>
         <p>Cards Total: {dealerValues()}</p>
         {dealerCardsArr}
       </div>
-
+      {/* <p>{phrase}</p> */}
       <div className="userHand">
         {userCardsArr}
         <p>Player</p>

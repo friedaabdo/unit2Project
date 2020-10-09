@@ -5,7 +5,7 @@ import './Rules.css'
 const Rules = () => {
     return(
         <div className='rules'>
-        <Link to='/'><button>Home</button></Link>
+        <Link to='/'><i className="fas fa-home"></i></Link>
         <h1>Rules</h1>
         <h3>OBJECT OF THE GAME</h3>
         <p>Each participant attempts to beat the dealer by getting a count as close to 21 as possible, without going over 21.</p>  

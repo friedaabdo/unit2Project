@@ -1,0 +1,30 @@
+.landing {
+    /* padding-top: 20%; */
+    /* height: 100vh;
+    align-content: center; */
+    position: relative;
+    top: 35vh;
+
+    }
+    
+
+h1 {
+  font-family: 'Sansita Swashed';
+  margin: auto;
+  font-size: 50px;
+
+}
+.fas {
+  font-size: 3rem;
+  color: white;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 10px;
+  font-size: 20px;
+}

@@ -3,3 +3,16 @@
     margin: auto;
     text-align: left;
 }
+.fas {
+    display: inline;
+    position: absolute;
+    right: 85%;
+    top: 5%
+}
+.rules h1 {
+    display: inline-block;
+}
+.rules {
+    padding-bottom: 50px;
+    text-align: center;
+}

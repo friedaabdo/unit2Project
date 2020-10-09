@@ -1,0 +1,21 @@
+/* .table {
+    height: 100vh;
+    
+} */
+.table .fas {
+    display: inline;
+    position: absolute;
+    right: 85%;
+    top: 5%
+}
+/* .dealerHand {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    margin: auto;
+}
+.userHand {
+    position: absolute;
+    top: 65%;
+    left: 45%
+} */

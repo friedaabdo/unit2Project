@@ -10,20 +10,8 @@
   height: 100%;
   min-height: 100vh;
   color: white;
-  font-family: "Roboto"
+  font-family: "Roboto";
+  
 }
 
-h1 {
-  font-family: 'Sansita Swashed';
-  margin: auto;
-}
-
-button {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  padding: 5px 10px;
-  border-radius: 50px;
-  margin: 10px;
-}
 
