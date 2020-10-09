@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Buttons from "./Buttons";
 import User from "./User";
 import Dealer from "./Dealer";
-import './Table.css'
+import "./Table.css";
 
 const Table = () => {
   const [deck, setDeck] = useState([]);
@@ -62,7 +62,6 @@ const Table = () => {
       />
     );
   });
-
 
   const [dealerCards, setDealerCards] = useState([]);
 
@@ -124,7 +123,7 @@ const Table = () => {
           counter -= 10;
         }
       });
-
+console.log('counter after reassign',counter)
       return counter;
     }
   };
@@ -154,7 +153,6 @@ const Table = () => {
         if (isEleven && counter > 21) {
           counter -= 10;
         }
-        
       });
 
       return counter;
@@ -170,59 +168,91 @@ const Table = () => {
     await draw1CardDealer();
   };
 
-  const handleHit = () => {
-    draw1CardUser();
+
+
+  const [phrase, setPhrase] = useState('Press "Deal" to start');
+
+  const result = () => {
+    switch (true) {
+      case userValues() === undefined:
+        setPhrase('');
+        break;
+      case userValues() === 21 && dealerValues() === 21:
+        setPhrase("BlackJack push!");
+        break;
+      case userValues() === 21:
+        setPhrase("You got BlackJack!");
+
+        break;
+      case dealerValues() === 21:
+        setPhrase("Aw darn, dealer got blackjack");
+        break;
+      case userValues() > 21:
+        setPhrase("Dang, you busted!");
+
+        break;
+      case dealerValues() > 21:
+        setPhrase("WOO! dealer busted!");
+        break;
+      case dealerValues() === userValues():
+        setPhrase("You push with the dealer");
+        break;
+      case userValues() > dealerValues():
+        setPhrase("You win!");
+        break;
+      case userValues() < dealerValues():
+        setPhrase("You lose") ;
+        break;
+      default:
+        setPhrase("Whoops, something went wrong");
+    }
   };
-   const handleStand = () => {
-    if (dealerValues() > 16) {
-      
-     console.log('no mas dealer!')
+  // result()
+
+  // setPhrase(result())
+  const handleStand = async () => {
+    if (await dealerValues() > 16) {
+      result();
     } else {
-            draw1CardDealer();  
+       draw1CardDealer();
+       result()
+      // if (await dealerValues() > 16) {
+      //   result();
+      // } else {
+      //    draw1CardDealer();
+      //   if ( dealerValues() > 16) {
+      //     result();
+      //   } else {
+      //      draw1CardDealer();
+      //     result();
+      //   }
+      // }
     }
   };
 
-  if (userValues() === 21) {
-    console.log("yay! BlackJack!");
-    handleStand()
-  } else if (userValues() > 21) {
-      console.log('Dang you busted!')
-      handleStand()
-  }
-  if (dealerValues() === 21) {
-    console.log("aw darn, dealer got blackjack");
-  } else if ( dealerValues > 21) {
-      console.log('WOO! dealer busted!')
-  }
-  //tie = push
-  //user hand > dealer hand and vs
-
-  // const [phrase, setPhrase] = useState('')
-  
-  // switch(true) {
-  //   case (userValues() === 21 && dealerValues() === 21): setPhrase('BlackJack push!');
-  //   case (userValues() === 21): setPhrase('You got BlackJack!');
-  //   case (dealerValues() === 21): setPhrase("Aw darn, dealer got blackjack");
-    // case (userValues() > 21): setPhrase('Dang you busted!');
-    // case (dealerValues() > 21): setPhrase('WOO! dealer busted!');
-  //   case (dealerValues() === userValues()): setPhrase('You push with the dealer')
-  // }
-
+  const handleHit = async () => {
+    await draw1CardUser();
+    if (userValues() >= 21) {
+      handleStand();
+    }
+  };
 
 
   return (
     <div className="table">
+      <h1>BlackJack</h1>
       <Link to="/">
         <i className="fas fa-home"></i>
       </Link>
-      <div className="dealerHand">
+      <div className="dealerDiv">
         <p>Dealer</p>
         <p>Cards Total: {dealerValues()}</p>
-        {dealerCardsArr}
+        <div className="dealerHand">{dealerCardsArr}</div>
       </div>
-      {/* <p>{phrase}</p> */}
-      <div className="userHand">
-        {userCardsArr}
+      <p>{phrase}</p>
+      <div className="userDiv">
+        <div className="userHand">{userCardsArr}</div>
+
         <p>Player</p>
         <p>Cards Total: {userValues()}</p>
       </div>

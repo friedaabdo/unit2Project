@@ -1,17 +1,10 @@
-import React from 'react'
-import Card from './Card'
+import React from "react";
+import Card from "./Card";
 
 const Dealer = (props) => {
-// console.log('props', props)
+  // console.log('props', props)
 
+  return <Card image={props.image} />;
+};
 
-  
-    return(
-        <div className='hand'>
-             <Card image={props.image}/>
-        </div>
-
-    )
-}
-
-export default Dealer
+export default Dealer;
