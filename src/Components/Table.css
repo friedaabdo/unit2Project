@@ -28,3 +28,6 @@ h1 {
 .buttonContainer {
   grid-area: buttons;
 }
+div.dealerHand:nth-child(2) img {
+    display: null;
+}
