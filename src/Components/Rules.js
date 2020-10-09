@@ -4,7 +4,7 @@ import './Rules.css'
 
 const Rules = () => {
     return(
-        <div>
+        <div className='rules'>
         <Link to='/'><button>Home</button></Link>
         <h1>Rules</h1>
         <h3>OBJECT OF THE GAME</h3>

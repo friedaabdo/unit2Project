@@ -153,6 +153,7 @@ const Table = () => {
         if (isEleven && counter > 21) {
           counter -= 10;
         }
+        
       });
 
       return counter;

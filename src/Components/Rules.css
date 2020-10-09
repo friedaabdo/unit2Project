@@ -1,5 +1,5 @@
-p {
+.rules p {
     width: 80%;
     margin: auto;
-    text-align: right;
+    text-align: left;
 }
