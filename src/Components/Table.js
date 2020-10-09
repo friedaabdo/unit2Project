@@ -123,7 +123,7 @@ const Table = () => {
           counter -= 10;
         }
       });
-console.log('counter after reassign',counter)
+// console.log('counter after reassign',counter)
       return counter;
     }
   };

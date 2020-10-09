@@ -102,24 +102,24 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Card heirarchy func | H | 2hrs| hrs |
-| Ace card rules | M | 2hrs| 2hrs |
-| Dealer rules func | H | 3hrs| hrs |
-| Deal func | H | 2hrs| 6hrs |
-| Understand API and render/collect proper data | H | 3 hrs| hrs |
+| Card hierarchy func | H | 2hrs| 0hrs | 
+| Ace card rules | M | 2hrs| 2hrs - TBA |
+| Dealer rules func | H | 3hrs| 3hrs |
+| Deal func | H | 2hrs| 8hrs |
+| Understand API and render/collect proper data | H | 3 hrs| 10hrs |
 | Hit func | H | 2hrs| 6hrs |
-| Stand func | H | 2hrs| hrs |
+| Stand func | H | 2hrs| 4hrs |
 | Set up components | H | 1hrs| 1hrs |
-| Make the buttons work | H | 3hrs| hrs |
+| Make the buttons work | H | 3hrs| 1hrs |
 | Set up Router and landing page | M | 1hrs| 1hrs |
-| Card flipping animations | L | 3hrs| hrs |
+| Card flipping animations | L | 3hrs| 0hrs |
 | Link rules to landing page | L | 1hrs| .5hrs |
-| Adding multiplayer | L | 3hrs| hrs |
-| Get multiplayer to work | L | 3hrs| hrs |
-| STYLING(mobile) | M | 3hrs| hrs |
-| STYLING(desktop) | M | 1hrs| hrs |
-| Score counter | L | 2hrs| hrs |
-| **Total** |  | 37hrs| hrs |
+| Adding multiplayer | L | 3hrs| 0hrs |
+| Get multiplayer to work | L | 3hrs| 0hrs |
+| STYLING(mobile) | M | 3hrs| 2hrs |
+| STYLING(desktop) | M | 1hrs| 2hrs |
+| Score counter | L | 2hrs| 0hrs |
+| **Total** |  | 37hrs| 41hrs+ |
 
 **There will most probably be a loooot of debugging and/or figuring out how things intertwine with each other. There are a lot of shifting parts
 
@@ -134,7 +134,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+  const handleDeal = async () => {
+    await fetchShuffle();
+
+    await draw1CardUser();
+    await draw1CardDealer();
+    await draw1CardUser();
+    await draw1CardDealer();
+  };
 ```
