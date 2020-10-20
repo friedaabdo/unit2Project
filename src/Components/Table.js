@@ -13,9 +13,11 @@ const Table = () => {
       "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1"
     );
     const info = await res.json();
+    
     setDeck(info);
+    
   };
-
+console.log('this is info',callingApi())
   useEffect(() => {
     callingApi();
   }, []);
@@ -62,6 +64,7 @@ const Table = () => {
       />
     );
   });
+  console.log('this is userCards',userCardsArr)
 
   const [dealerCards, setDealerCards] = useState([]);
 
